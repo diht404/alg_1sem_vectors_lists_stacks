@@ -10,10 +10,12 @@ Node *nodeCtor(void *value, size_t elem_size, Node *next)
     return node;
 }
 
-void listCtor(List *list, size_t elem_size)
+List *listCtor(size_t elem_size)
 {
+    List *list = (List *)calloc(1, sizeof(list[0]));
     list->data = nullptr;
     list->elem_size = elem_size;
+    return list;
 }
 
 void listDtor(List *list)

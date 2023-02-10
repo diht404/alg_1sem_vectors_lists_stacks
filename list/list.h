@@ -17,7 +17,7 @@ struct List
     size_t elem_size = 0;
 };
 
-void listCtor(List *list, size_t elem_size);
+List *listCtor(size_t elem_size);
 
 void listDtor(List *list);
 

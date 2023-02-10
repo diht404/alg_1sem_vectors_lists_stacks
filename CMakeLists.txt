@@ -10,3 +10,5 @@ add_executable(stackVectorTest stack_vector/stack_test.cpp stack_vector/stack.cp
 
 add_executable(listTest list/list_test.cpp list/list.cpp)
 add_executable(stackListTest stack_list/stack_test.cpp stack_list/stack.cpp list/list.cpp)
+
+add_executable(stacksTest test_stacks.cpp)
