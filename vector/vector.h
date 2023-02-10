@@ -16,7 +16,7 @@ Vector *vectorCtor(size_t size, size_t elem_size);
 
 void vectorDtor(Vector *vector);
 
-void vectorResize(Vector *vector);
+void *vectorResize(Vector *vector);
 
 int vectorPush(Vector *vector, void *buffer);
 

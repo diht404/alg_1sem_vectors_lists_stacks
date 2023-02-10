@@ -118,7 +118,8 @@ int main()
     double test1time = 0;
     double test2time = 0;
     double test3time = 0;
-    for (int i = 0; i < 10; i++)
+    int num_tests = 3;
+    for (int i = 0; i < num_tests; i++)
     {
         Stack *stack1 = stack_ctr(1, sizeof(int));
         test1time += test1(stack1);
@@ -135,11 +136,11 @@ int main()
 
     printf("Tests mean execution time:\n");
     printf("Test 1 mean execution time: %lg ms\n",
-           test1time / 10 / 1e3);
+           test1time / num_tests / 1e3);
     printf("Test 2 mean execution time: %lg ms\n",
-           test2time / 10 / 1e3);
+           test2time / num_tests / 1e3);
     printf("Test 3 mean execution time: %lg ms\n",
-           test3time / 10 / 1e3);
+           test3time / num_tests / 1e3);
 
     return 0;
 }
