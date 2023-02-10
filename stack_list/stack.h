@@ -7,13 +7,13 @@ struct Stack
     List *list = {};
 };
 
-Stack* stack_ctr(size_t size, size_t element_size);
+Stack *stack_ctr(size_t size, size_t element_size);
 
-Stack* stack_dtr(Stack *stack);
+Stack *stack_dtr(Stack *stack);
 
-int stackPush(struct Stack* stack, void* buffer);
+int stackPush(struct Stack *stack, void *buffer);
 
-int stackTop(struct Stack* stack, void* buffer);
+int stackTop(struct Stack *stack, void *buffer);
 
 int stackPop(Stack *stack);
 

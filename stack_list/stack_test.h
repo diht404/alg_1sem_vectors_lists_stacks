@@ -2,7 +2,7 @@
 #define STACKS_STACK_LIST_STACK_TEST_H
 
 #include "stack.h"
-#include<sys/time.h>
+#include <sys/time.h>
 
 double test1(Stack *stack);
 

@@ -134,9 +134,12 @@ int main()
     }
 
     printf("Tests mean execution time:\n");
-    printf("Test 1 mean execution time: %lg ms\n", test1time / 10 / 1e3);
-    printf("Test 2 mean execution time: %lg ms\n", test2time / 10 / 1e3);
-    printf("Test 3 mean execution time: %lg ms\n", test3time / 10 / 1e3);
+    printf("Test 1 mean execution time: %lg ms\n",
+           test1time / 10 / 1e3);
+    printf("Test 2 mean execution time: %lg ms\n",
+           test2time / 10 / 1e3);
+    printf("Test 3 mean execution time: %lg ms\n",
+           test3time / 10 / 1e3);
 
     return 0;
 }
