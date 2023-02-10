@@ -12,7 +12,7 @@ struct Vector
     size_t capacity = 0;
 };
 
-void vectorCtor(Vector *vector, size_t elem_size);
+Vector *vectorCtor(size_t size, size_t elem_size);
 
 void vectorDtor(Vector *vector);
 

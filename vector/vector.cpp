@@ -1,11 +1,13 @@
 #include "vector.h"
 
-void vectorCtor(Vector *vector, size_t elem_size)
+Vector *vectorCtor(size_t size, size_t elem_size)
 {
+    Vector *vector = (Vector *) calloc(1, sizeof(vector[0]));
     vector->elem_size = elem_size;
+    vector->data = calloc(size, elem_size);
     vector->size = 0;
-    vector->capacity = 0;
-    vectorResize(vector);
+    vector->capacity = size;
+    return vector;
 }
 
 void vectorDtor(Vector *vector)
