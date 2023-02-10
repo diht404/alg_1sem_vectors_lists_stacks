@@ -1,7 +1,7 @@
-#ifndef TASK2__VECTOR_H
-#define TASK2__VECTOR_H
+#ifndef STACKS_VECTOR__VECTOR_H
+#define STACKS_VECTOR__VECTOR_H
 
-#include "common.h"
+#include "../common.h"
 
 struct Vector
 {
@@ -24,4 +24,4 @@ int vectorTop(Vector *vector, void *buffer);
 
 int vectorPop(Vector *vector);
 
-#endif //TASK2__VECTOR_H
+#endif STACKS_//VECTOR__VECTOR_H

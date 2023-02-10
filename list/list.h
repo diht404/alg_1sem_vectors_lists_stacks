@@ -1,7 +1,7 @@
-#ifndef TASK2__LIST_H
-#define TASK2__LIST_H
+#ifndef STACKS_LIST__LIST_H
+#define STACKS_LIST__LIST_H
 
-#include "common.h"
+#include "../common.h"
 
 struct Node
 {
@@ -27,4 +27,4 @@ int listTop(List *list, void *buffer);
 
 int listPop(List *list);
 
-#endif //TASK2__LIST_H
+#endif //STACKS_LIST__LIST_H
